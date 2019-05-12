@@ -1,4 +1,4 @@
-#Solutions of SSS Challenges
+# Solutions of SSS Challenges
 
 For original, challenges see [Challenge](Challenge.md)
 
