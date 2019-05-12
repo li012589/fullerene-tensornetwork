@@ -50,7 +50,7 @@ def maxfactor(T):
     T_ = T/torch.exp(maxlognum)
     return T_,maxlognum
 
-fan = torch.einsum("abcdef,gfeih,edlkji,qhijop,jkmno,pontsr->abcdlkmntsrpqhgf",T2,T1,T2,T2,T1,T2)
+fan = torch.einsum("abcdef,gfeih,edlkji,qhijop,jkmno,pontsr->abcdlkmntsfghqpr",T2,T1,T2,T2,T1,T2)
 fan,meanlognum1= meanfactor(fan)
 fan = fan.reshape(2,2,2**6,2,2,2**6)
 
